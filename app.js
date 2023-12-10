@@ -71,6 +71,6 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(process.env.PORT || 6543, () => {
+server.listen(process.env.PORT || 6543, '0.0.0.0', () => {
   console.log('Server is listening');
 });
